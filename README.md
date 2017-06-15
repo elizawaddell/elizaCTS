@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![logo](https://s3.amazonaws.com/bottega-devcamp/bottega-devcamp.png)
 
 ## Hi there! Welcome to Bottega Devcamp
@@ -38,3 +39,29 @@ For more information on how to use Cloud9, visit http://docs.c9.io for our docum
 http://www.youtube.com/user/c9ide.
 
 Good luck with the coding!
+=======
+# Devcamp Porfolio Application
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+>>>>>>> Updated readme title
