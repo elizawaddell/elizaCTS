@@ -11,10 +11,14 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD:AppName/db/schema.rb
+<<<<<<< HEAD:AppName/db/schema.rb
 ActiveRecord::Schema.define(version: 20170614164250) do
 =======
 ActiveRecord::Schema.define(version: 20170619162434) do
 >>>>>>> Get Skills.rb:db/schema.rb
+=======
+ActiveRecord::Schema.define(version: 20170619172606) do
+>>>>>>> Added portfolio items via Resource generator:db/schema.rb
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +26,16 @@ ActiveRecord::Schema.define(version: 20170619162434) do
   create_table "blogs", force: :cascade do |t|
     t.string "title"
     t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "porfolios", force: :cascade do |t|
+    t.string "title"
+    t.string "subtitle"
+    t.text "body"
+    t.text "main_image"
+    t.text "thumb_image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
