@@ -1,0 +1,242 @@
+elizawaddell:~/workspace (master) $ LS
+bash: LS: command not found
+elizawaddell:~/workspace (master) $ ls
+AppName/  README.md
+elizawaddell:~/workspace (master) $ git init
+Reinitialized existing Git repository in /home/ubuntu/workspace/.git/
+elizawaddell:~/workspace (master) $ touch file.rb file2.text file3.html
+elizawaddell:~/workspace (master) $ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        AppName/
+        README.md
+        file.rb
+        file2.text
+        file3.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+elizawaddell:~/workspace (master) $ git commit -m "initial commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        AppName/
+        README.md
+        file.rb
+        file2.text
+        file3.html
+
+nothing added to commit but untracked files present
+elizawaddell:~/workspace (master) $ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        AppName/
+        README.md
+        file.rb
+        file2.text
+        file3.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+elizawaddell:~/workspace (master) $ echo "some content" > file2.txt 
+elizawaddell:~/workspace (master) $ cat file2.txt
+some content
+elizawaddell:~/workspace (master) $ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        AppName/
+        README.md
+        file.rb
+        file2.text
+        file2.txt
+        file3.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+elizawaddell:~/workspace (master) $ git add .
+elizawaddell:~/workspace (master) $ git commit -m "Updated content for file 2"                      
+[master (root-commit) ec2704b] Updated content for file 2
+ 87 files changed, 1552 insertions(+)
+ create mode 100644 AppName/.gitignore
+ create mode 100644 AppName/Gemfile
+ create mode 100644 AppName/Gemfile.lock
+ create mode 100644 AppName/README.md
+ create mode 100644 AppName/Rakefile
+ create mode 100644 AppName/app/assets/config/manifest.js
+ create mode 100644 AppName/app/assets/images/.keep
+ create mode 100644 AppName/app/assets/javascripts/application.js
+ create mode 100644 AppName/app/assets/javascripts/blogs.coffee
+ create mode 100644 AppName/app/assets/javascripts/cable.js
+ create mode 100644 AppName/app/assets/javascripts/channels/.keep
+ create mode 100644 AppName/app/assets/stylesheets/application.css
+ create mode 100644 AppName/app/assets/stylesheets/blogs.scss
+ create mode 100644 AppName/app/assets/stylesheets/scaffolds.scss
+ create mode 100644 AppName/app/channels/application_cable/channel.rb
+ create mode 100644 AppName/app/channels/application_cable/connection.rb
+ create mode 100644 AppName/app/controllers/application_controller.rb
+ create mode 100644 AppName/app/controllers/blogs_controller.rb
+ create mode 100644 AppName/app/controllers/concerns/.keep
+ create mode 100644 AppName/app/helpers/application_helper.rb
+ create mode 100644 AppName/app/helpers/blogs_helper.rb
+ create mode 100644 AppName/app/jobs/application_job.rb
+ create mode 100644 AppName/app/mailers/application_mailer.rb
+ create mode 100644 AppName/app/models/application_record.rb
+ create mode 100644 AppName/app/models/blog.rb
+ create mode 100644 AppName/app/models/concerns/.keep
+ create mode 100644 AppName/app/views/blogs/_blog.json.jbuilder
+ create mode 100644 AppName/app/views/blogs/_form.html.erb
+ create mode 100644 AppName/app/views/blogs/edit.html.erb
+ create mode 100644 AppName/app/views/blogs/index.html.erb
+ create mode 100644 AppName/app/views/blogs/index.json.jbuilder
+ create mode 100644 AppName/app/views/blogs/new.html.erb
+ create mode 100644 AppName/app/views/blogs/show.html.erb
+ create mode 100644 AppName/app/views/blogs/show.json.jbuilder
+ create mode 100644 AppName/app/views/layouts/application.html.erb
+ create mode 100644 AppName/app/views/layouts/mailer.html.erb
+ create mode 100644 AppName/app/views/layouts/mailer.text.erb
+ create mode 100755 AppName/bin/bundle
+ create mode 100755 AppName/bin/rails
+ create mode 100755 AppName/bin/rake
+ create mode 100755 AppName/bin/setup
+ create mode 100755 AppName/bin/spring
+ create mode 100755 AppName/bin/update
+ create mode 100755 AppName/bin/yarn
+ create mode 100644 AppName/config.ru
+ create mode 100644 AppName/config/application.rb
+ create mode 100644 AppName/config/boot.rb
+ create mode 100644 AppName/config/cable.yml
+ create mode 100644 AppName/config/database.yml
+ create mode 100644 AppName/config/environment.rb
+ create mode 100644 AppName/config/environments/development.rb
+ create mode 100644 AppName/config/environments/production.rb
+ create mode 100644 AppName/config/environments/test.rb
+ create mode 100644 AppName/config/initializers/application_controller_renderer.rb
+ create mode 100644 AppName/config/initializers/assets.rb
+ create mode 100644 AppName/config/initializers/backtrace_silencers.rb
+ create mode 100644 AppName/config/initializers/cookies_serializer.rb
+ create mode 100644 AppName/config/initializers/filter_parameter_logging.rb
+ create mode 100644 AppName/config/initializers/inflections.rb
+ create mode 100644 AppName/config/initializers/mime_types.rb
+ create mode 100644 AppName/config/initializers/wrap_parameters.rb
+ create mode 100644 AppName/config/locales/en.yml
+ create mode 100644 AppName/config/puma.rb
+ create mode 100644 AppName/config/routes.rb
+ create mode 100644 AppName/config/secrets.yml
+ create mode 100644 AppName/config/spring.rb
+ create mode 100644 AppName/db/migrate/20170614164250_create_blogs.rb
+ create mode 100644 AppName/db/schema.rb
+ create mode 100644 AppName/db/seeds.rb
+ create mode 100644 AppName/lib/assets/.keep
+ create mode 100644 AppName/lib/tasks/.keep
+ create mode 100644 AppName/log/.keep
+ create mode 100644 AppName/package.json
+ create mode 100644 AppName/public/404.html
+ create mode 100644 AppName/public/422.html
+ create mode 100644 AppName/public/500.html
+ create mode 100644 AppName/public/apple-touch-icon-precomposed.png
+ create mode 100644 AppName/public/apple-touch-icon.png
+ create mode 100644 AppName/public/favicon.ico
+ create mode 100644 AppName/public/robots.txt
+ create mode 100644 AppName/tmp/.keep
+ create mode 100644 AppName/vendor/.keep
+ create mode 100644 README.md
+ create mode 100644 file.rb
+ create mode 100644 file2.text
+ create mode 100644 file2.txt
+ create mode 100644 file3.html
+elizawaddell:~/workspace (master) $ git log
+commit ec2704bd675a8ec245a8e21e4ce3ae93400aeac8
+Author: Skyridge Devcamp <skyridge@devcamp.com>
+Date:   Tue Jun 20 14:52:08 2017 +0000
+
+    Updated content for file 2
+elizawaddell:~/workspace (master) $ git checkout  ec2704bd675a8ec245a8e21e4ce3ae93400aeac8
+Note: checking out 'ec2704bd675a8ec245a8e21e4ce3ae93400aeac8'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at ec2704b... Updated content for file 2
+elizawaddell:~/workspace ((ec2704b...)) $ cat file2.txt
+some content
+elizawaddell:~/workspace ((ec2704b...)) $ git checkout  ec2704bd675a8ec245a8e21e4ce3ae93400aeac8
+HEAD is now at ec2704b... Updated content for file 2
+elizawaddell:~/workspace ((ec2704b...)) $ git checkout master
+Switched to branch 'master'
+elizawaddell:~/workspace (master) $ git status
+On branch master
+nothing to commit, working tree clean
+elizawaddell:~/workspace (master) $ git branch
+* master
+elizawaddell:~/workspace (master) $ git checkout -b my-great-feature
+Switched to a new branch 'my-great-feature'
+elizawaddell:~/workspace (my-great-feature) $ echo "come more content" >> file2.txt
+elizawaddell:~/workspace (my-great-feature) $ cat file2.txt
+some content
+come more content
+elizawaddell:~/workspace (my-great-feature) $ git status
+On branch my-great-feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   file2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+elizawaddell:~/workspace (my-great-feature) $ git add file2.txt
+elizawaddell:~/workspace (my-great-feature) $ git commit -m "initial implementation of file2"
+[my-great-feature 860e17a] initial implementation of file2
+ 1 file changed, 1 insertion(+)
+elizawaddell:~/workspace (my-great-feature) $ git status
+On branch my-great-feature
+nothing to commit, working tree clean
+elizawaddell:~/workspace (my-great-feature) $ git checkout master
+Switched to branch 'master'
+elizawaddell:~/workspace (master) $ cat file2.txt
+some content
+elizawaddell:~/workspace (master) $ git checkout my-great-feature
+Switched to branch 'my-great-feature'
+elizawaddell:~/workspace (my-great-feature) $ echo "Last items"
+1) $ git rebase --continueYou must edit all merge conflicts and then
+mark them as resolved using git add
+1) $ git add .elizawaddell:~/workspace/AppName (master|REBASE 1/elizawaddell:~/workspace/AppName (master) $ git push
+Delta compression using up to 8 threads.
+To github.com:elizawaddell/elizaCTS.git
+d .
+elizawaddell:~/workspace/AppName (master) $ touch README.md
+elizawaddell:~/workspace/AppName (master) $ subl README.md
+bash: subl: command not found
+elizawaddell:~/workspace/AppName (master) $ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+elizawaddell:~/workspace/AppName (master) $ git commit -m "Added readme"                            
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+elizawaddell:~/workspace/AppName (master) $ git remote -v
+origin  git@github.com:elizawaddell/elizaCTS.git (fetch)
+origin  git@github.com:elizawaddell/elizaCTS.git (push)
+elizawaddell:~/workspace/AppName (master) $ git push
+Warning: Permanently added 'github.com,192.30.255.113' (RSA) to the list of known hosts.
+Everything up-to-date
+elizawaddell:~/workspace/AppName (master) $ 
