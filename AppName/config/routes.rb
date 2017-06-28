@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
-  resources :porfolios
+  get 'portfolio/title:string'
+
+  get 'portfolio/subtitle:string'
+
+  get 'portfolio/body:text'
+
+  get 'portfolio/main_image:text'
+
+  get 'portfolio/thumb_image:text'
+
+  resources :portfolios
+  
   get 'pages/home'
 
   get 'pages/about'
